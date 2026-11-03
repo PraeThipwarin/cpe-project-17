@@ -1,22 +1,22 @@
-
 \documentclass[semifinal]{cpecmu}
 
 %% This is a sample document demonstrating how to use the CPECMU
 %% project template. If you are having trouble, see "cpecmu.pdf" for
 %% documentation.
 
-\projectNo{P069-1}
-\acadyear{2021}
+\projectNo{S017-1}
+\acadyear{2026}
 
-\titleTH{โครงงานสุดเลิฟของฉัน}
-\titleEN{Your Project Name Goes Here}
+\titleTH{ระบบบริหารจัดการคลังสินค้าและตรวจสอบขนาดวัตถุอัจฉริยะ}
+\titleEN{Automated Inventory Management and Object Detection System}
 
-\author{นายกินรี ไทร์ล้ำเลิศ}{Kinnaree Tirelumlert}{690610696}
-\author{นายบรรจบ พบเอฟตลอด}{Banjob Pob-eftalord}{690610969}
+\author{นางสาว ณัฐรดา หนูจิตร}{Natrada Nuchit}{660610757}
+\author{นางสาว ทิพวรินท์ สีห์วรางกูร}{Thipwarin Seewarangkoon}{660610760}
+\author{นางสาว สิรวิชญ์ สีทอง}{Sirawit Seetong}{660610802}
 
-\cpeadvisor{chinawat}
-\cpecommittee{paskorn}
-\committee{รศ.ดร.\,นิพนธ์ ธีรอำพน}{Assoc.\,Prof.\,Nipon Theera-Umpon, Ph.D.}
+\cpeadvisor{sansanee}
+\cpecommittee{kasemsit}
+\committee{ศ.ดร.\,นิพนธ์ ธีรอำพน}{Prof.\,Nipon Theera-Umpon, Ph.D.}
 
 %% Some possible packages to include:
 \usepackage[final]{graphicx} % for including graphics
@@ -70,6 +70,7 @@
 %% \includeonly{chapters/eval}
 \usepackage{float}
 \begin{document}
+
 \include{chapters/frontmatter}
 
 \pagestyle{empty}\cleardoublepage
@@ -79,29 +80,29 @@
 \include{chapters/background}
 \include{chapters/approach}
 \include{chapters/eval}
-\ifproject
-\include{chapters/conclusion}
+\ifproject      
+  \include{chapters/conclusion}
 \fi
 
 \bibliography{FinalReport491}
 
-\ifproject
-\normalspacing
-\appendix
-\include{chapters/appendix}
-
-%% Display glossary (optional) -- need glossary option.
-\ifglossary\glossarypage\fi
-
-%% Display index (optional) -- need idx option.
-\ifindex\indexpage\fi
-
-\begin{biosketch}
-\begin{center}
-  \includegraphics[width=1.5in]{mugshot.jpg}
-\end{center}
-Your biosketch goes here. Make sure it sits inside
-the \texttt{biosketch} environment.
-\end{biosketch}
+\ifproject      
+  \normalspacing
+  \appendix
+  \include{chapters/appendix}
+  
+  %% Display glossary (optional) -- need glossary option.
+  \ifglossary\glossarypage\fi
+  
+  %% Display index (optional) -- need idx option.
+  \ifindex\indexpage\fi
+  
+  \begin{biosketch}      
+    \begin{center}      
+      \includegraphics[width=1.5in]{mugshot.jpg}
+    \end{center}
+    Your biosketch goes here. Make sure it sits inside
+    the \texttt{biosketch} environment.
+  \end{biosketch}
 \fi % \ifproject
 \end{document}
