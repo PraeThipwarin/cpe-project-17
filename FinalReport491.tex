@@ -67,7 +67,7 @@
 %% be previewed.
 %% Useful if your report is large, as you might not want to build
 %% the entire file when editing a certain part of your report.
-%%\includeonly{chapters/background}
+%%\includeonly{chapters/approach}
 \usepackage{float}
 \begin{document}
 
@@ -80,13 +80,13 @@
 \include{chapters/background}
 \include{chapters/approach}
 \include{chapters/eval}
-\ifproject                
+\ifproject                                        
   \include{chapters/conclusion}
 \fi
 
 \bibliography{FinalReport491}
 
-\ifproject                
+\ifproject                                        
   \normalspacing
   \appendix
   \include{chapters/appendix}
@@ -97,8 +97,8 @@
   %% Display index (optional) -- need idx option.
   \ifindex\indexpage\fi
   
-  \begin{biosketch}                
-    \begin{center}                
+  \begin{biosketch}                                        
+    \begin{center}                                        
       \includegraphics[width=1.5in]{mugshot.jpg}
     \end{center}
     Your biosketch goes here. Make sure it sits inside
