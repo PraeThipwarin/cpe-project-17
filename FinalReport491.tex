@@ -44,8 +44,8 @@
 %% the tolerance to 9999
 \tolerance=9999
 
-\bibliographystyle{plain}
-% \bibliographystyle{IEEEbib}
+%\bibliographystyle{plain}
+\bibliographystyle{IEEEtran}
 
 % \renewcommand{\topfraction}{0.85}
 % \renewcommand{\textfraction}{0.1}
@@ -80,13 +80,13 @@
 \include{chapters/background}
 \include{chapters/approach}
 \include{chapters/eval}
-\ifproject                                        
+\ifproject                                                              
   \include{chapters/conclusion}
 \fi
 
 \bibliography{FinalReport491}
 
-\ifproject                                        
+\ifproject                                                              
   \normalspacing
   \appendix
   \include{chapters/appendix}
@@ -97,8 +97,8 @@
   %% Display index (optional) -- need idx option.
   \ifindex\indexpage\fi
   
-  \begin{biosketch}                                        
-    \begin{center}                                        
+  \begin{biosketch}                                                              
+    \begin{center}                                                              
       \includegraphics[width=1.5in]{mugshot.jpg}
     \end{center}
     Your biosketch goes here. Make sure it sits inside
